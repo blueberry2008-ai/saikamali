@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --color-dark-panel: #0d0e14;
+  --color-neon-cyan: #00f3ff;
+  --color-neon-magenta: #ff00e5;
+}
+
+@layer base {
+  body {
+    background-color: #050505;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .neon-border {
+    border: 1px solid rgba(0, 243, 255, 0.3);
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+  }
+
+  .neon-text-cyan {
+    color: var(--color-neon-cyan);
+    text-shadow: 0 0 8px rgba(0, 243, 255, 0.5);
+  }
+
+  .neon-text-magenta {
+    color: var(--color-neon-magenta);
+    text-shadow: 0 0 8px rgba(255, 0, 229, 0.5);
+  }
+}
